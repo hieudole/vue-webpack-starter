@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --config build/webpack.config.dev.js",
+    "lint-js": "eslint --ext .js,.vue src",
     "staging": "cross-env NODE_ENV=staging node build/build.js",
     "prod": "cross-env NODE_ENV=production node build/build.js",
     "build": "npm run prod",
@@ -28,6 +29,8 @@
     "copy-webpack-plugin": "^5.1.0",
     "cross-env": "^6.0.3",
     "css-loader": "^3.3.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.0.1",
     "fibers": "^4.0.2",
     "file-loader": "^5.0.2",
     "friendly-errors-webpack-plugin": "^1.7.0",

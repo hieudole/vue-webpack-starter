@@ -1,7 +1,5 @@
-import Vue from 'vue'
-import App from './App'
-
-Vue.config.productionTip = false
+import Vue from 'vue';
+import App from './App';
 
 console.log(process.env.NODE_ENV);
 
